@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "tsp compile . && tsc",
-    "watch": "concurrently \"tsp compile . --watch\" \"tsc --watch\"",
+    "watch": "concurrently \"tsp compile . --watch\" \"tsc --watch\" \"npm run start\"",
     "start": "nodemon dist/index.js"
   },
   "dependencies": {
